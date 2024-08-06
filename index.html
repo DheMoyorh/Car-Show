@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Car Site</h1>
+    </header>
+
+    <section id="car-list">
+        <h2>Available Cars</h2>
+        <ul id="cars">
+            <!-- Car items will be added here dynamically -->
+        </ul>
+    </section>
+
+    <section id="add-car">
+        <h2>Add a New Car</h2>
+        <form id="car-form">
+            <label for="brand">Brand:</label>
+            <input type="text" id="brand" name="brand" required>
+            <label for="model">Model:</label>
+            <input type="text" id="model" name="model" required>
+            <label for="year">Year:</label>
+            <input type="number" id="year" name="year" required>
+            <button type="submit">Add Car</button>
+        </form>
+    </section>
+
+    <section id="filter">
+        <h2>Filter Cars by Brand</h2>
+        <input type="text" id="filter-brand" placeholder="Enter brand to filter">
+    </section>
+
+    <section id="animation">
+        <h2>Car Animation</h2>
+        <div id="car-container">
+            <img id="car" src="/assets/car1.jpeg" alt="Car">
+        </div>
+    </section>
+
+   <script src="script.js"></script>
+</body>
+</html>
